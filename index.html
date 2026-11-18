@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulsi Paints Direct Franchise | Eco-Friendly & Premium Paints</title>
+    <meta name="description" content="Official Tulsi Paints Direct Franchise portal. Explore eco-friendly primers, interior & exterior emulsions, calculate exact painting costs, and order directly via WhatsApp.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFFFFF',
+                        brandGreen: '#16A34A',
+                        brandAmber: '#D97706',
+                        darkGreen: '#14532D',
+                        lightBg: '#F8FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-lightBg text-slate-800 font-sans antialiased selection:bg-brandGreen selection:text-white pb-20 md:pb-0">
+
+    <!-- Top Bar / Notification Banner -->
+    <div class="bg-darkGreen text-white text-xs sm:text-sm py-2 px-4 text-center font-medium">
+        <span><i class="fa-solid fa-award mr-2 text-brandAmber"></i> 2008 Govt of India National Award Winner | 25+ Years of Trust & Quality</span>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo & Brand -->
+            <div class="flex items-center space-x-3">
+                <img src="https://github.com/subconsciousman/tulsi-assets/blob/main/tulsi-logo.jpeg?raw=true" alt="Tulsi Paints Logo" class="h-12 w-12 object-contain rounded-lg border border-slate-200 p-1 bg-white" onerror="this.src='https://placehold.co/100x100?text=Tulsi+Logo'">
+                <div>
+                    <span class="text-xl font-black tracking-tight text-darkGreen block leading-none">TULSI PAINTS</span>
+                    <span class="text-xs font-semibold text-brandAmber uppercase tracking-wider">Direct Franchise Hub</span>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#products" class="hover:text-brandGreen transition">Products</a>
+                <a href="#calculator" class="hover:text-brandGreen transition">Quotation Calculator</a>
+                <a href="#benefits" class="hover:text-brandGreen transition">7 Core Benefits</a>
+                <a href="#legacy" class="hover:text-brandGreen transition">National Award</a>
+                <a href="#contact" class="hover:text-brandGreen transition">Contact</a>
+            </nav>
+
+            <!-- Quick Action Buttons -->
+            <div class="flex items-center space-x-3">
+                <button onclick="refreshLivePrices()" id="refreshBtn" title="Refresh Live CSV Prices" class="hidden sm:inline-flex items-center text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-2 rounded-lg transition">
+                    <i class="fa-solid fa-rotate mr-1.5"></i> Sync Prices
+                </button>
+                <a href="https://wa.me/919597589151?text=Hello%20Tulsi%20Paints%20Franchise,%20I%20would%20like%20to%20enquire%20about%20paint%20products%20and%20franchise%20pricing." target="_blank" class="bg-brandGreen hover:bg-green-700 text-white px-4 py-2.5 rounded-xl font-bold text-sm shadow-md transition flex items-center">
+                    <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Enquire Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-green-50/50 to-white py-16 lg:py-24 overflow-hidden border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Column: Copy & CTAs -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-green-100/80 text-darkGreen px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-shield-halved text-brandGreen"></i>
+                        <span>Zero Harmful Chemicals & Heavy Metals</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight">
+                        Pure Protection & <span class="text-brandGreen">Eco-Friendly Luxury</span> for Your Walls.
+                    </h1>
+                    <p class="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0">
+                        Welcome to the <strong>Coimbatore Franchise Hub (Vadavalli Road)</strong>. Experience 25+ years of proven manufacturing excellence with superior coverage, higher washability, and odor-free living.
+                    </p>
+
+                    <!-- Addresses Summary in Hero -->
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-slate-200 text-xs sm:text-sm space-y-2 text-slate-700 max-w-xl mx-auto lg:mx-0">
+                        <div class="flex items-start space-x-2">
+                            <i class="fa-solid fa-location-dot text-brandGreen mt-1"></i>
+                            <div><strong>Coimbatore Hub:</strong> 10/16, Vadavalli Road, Edayarpalayam, Coimbatore, Tamil Nadu 641025, India.</div>
+                        </div>
+                        <div class="flex items-start space-x-2">
+                            <i class="fa-solid fa-phone text-brandAmber mt-1"></i>
+                            <div><strong>Direct Hotline / WhatsApp:</strong> +91 95975 89151</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="https://drive.google.com/file/d/1U-sz6OgNZ6kuyY_USufQIqPNKSojanw6/view?usp=drivesdk" target="_blank" class="w-full sm:w-auto bg-darkGreen hover:bg-green-900 text-white px-7 py-3.5 rounded-xl font-bold text-sm shadow-lg transition flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-file-pdf text-brandAmber"></i>
+                            <span>Download PDF Brochure</span>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.okcoding.sai.colorpalette" target="_blank" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-7 py-3.5 rounded-xl font-bold text-sm shadow-sm transition flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-palette text-brandGreen"></i>
+                            <span>Colour Shade Finder App</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Hero Visual / Featured Badge -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md bg-white p-6 rounded-3xl shadow-xl border border-slate-100 text-center">
+                        <div class="absolute -top-3 -right-3 bg-brandAmber text-white text-xs font-black uppercase px-3 py-1.5 rounded-full shadow-md">
+                            Live Pricing Active
+                        </div>
+                        <img src="https://github.com/subconsciousman/tulsi-assets/blob/main/national-award%20.jpeg?raw=true" alt="2008 National Award" class="w-full h-64 object-cover rounded-2xl mb-4 border border-slate-100 shadow-inner">
+                        <h3 class="font-bold text-slate-800 text-base">National Award Winning Quality</h3>
+                        <p class="text-xs text-slate-500 mt-1">Presented at Vigyan Bhavan by Government of India (2008).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7 Core Benefits Section -->
+    <section id="benefits" class="py-16 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brandGreen text-xs font-bold uppercase tracking-widest bg-green-50 px-3 py-1 rounded-full">Uncompromising Quality</span>
+                <h2 class="text-3xl font-black text-slate-900 mt-3">The 7 Core Benefits of Tulsi Paints</h2>
+                <p class="text-slate-600 text-sm mt-2">Engineered for absolute health, environmental sustainability, and superior longevity.</p>
+                <!-- Single image text running line by line requirement -->
+                <p class="text-xs font-semibold text-brandAmber mt-2 uppercase tracking-wide">Eco Friendly • Health Friendly • Odourless • Zero Harmful Chemicals • Zero Heavy Metals • Budget Friendly • Higher Coverage</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Benefit 1 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-green-100 text-brandGreen rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base">1. Eco Friendly</h3>
+                    <p class="text-slate-600 text-xs mt-1">Formulated with sustainable ingredients to protect nature and your home environment.</p>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-green-100 text-brandGreen rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base">2. Health Friendly</h3>
+                    <p class="text-slate-600 text-xs mt-1">Safe for family members, children, and elderly residents with zero respiratory irritants.</p>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-green-100 text-brandGreen rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base">3. Odourless</h3>
+                    <p class="text-slate-600 text-xs mt-1">No harsh chemical smells. Paint today and move into your fresh rooms immediately.</p>
+                </div>
+                <!-- Benefit 4 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-green-100 text-brandGreen rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-ban"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base">4. Zero Harmful Chemicals</h3>
+                    <p class="text-slate-600 text-xs mt-1">Strictly toxin-free formulation ensuring pure indoor air quality.</p>
+                </div>
+                <!-- Benefit 5 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-green-100 text-brandGreen rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base">5. Zero Heavy Metals</h3>
+                    <p class="text-slate-600 text-xs mt-1">Completely free from lead, mercury, chromium, and other toxic heavy metals.</p>
+                </div>
+                <!-- Benefit 6 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-100 text-brandAmber rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base">6. Budget Friendly</h3>
+                    <p class="text-slate-600 text-xs mt-1">Direct franchise pricing offering maximum value for residential and commercial budgets.</p>
+                </div>
+                <!-- Benefit 7 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-md transition sm:col-span-2 lg:col-span-2">
+                    <div class="w-12 h-12 bg-amber-100 text-brandAmber rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-base">7. Higher Coverage</h3>
+                    <p class="text-slate-600 text-xs mt-1">Advanced spreading technology covers more square footage per liter, reducing total paint consumption.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Products Catalog Section -->
+    <section id="products" class="py-16 bg-slate-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-brandGreen text-xs font-bold uppercase tracking-widest bg-green-50 px-3 py-1 rounded-full">Catalog</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-3">Complete Product Range (14 Items)</h2>
+                    <p class="text-slate-600 text-sm mt-1">Live synchronized pricing for 1L and 20L packs with full specifications.</p>
+                </div>
+                <div class="mt-4 md:mt-0 flex items-center space-x-2">
+                    <span id="syncStatus" class="text-xs bg-green-100 text-green-800 font-semibold px-3 py-1.5 rounded-lg flex items-center">
+                        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse mr-2"></span> Prices Live Synchronized
+                    </span>
+                    <button onclick="refreshLivePrices()" class="bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-lg transition">
+                        <i class="fa-solid fa-rotate mr-1"></i> Refresh
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div id="productGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dynamically populated via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Automated Quotation Calculator Section -->
+    <section id="calculator" class="py-16 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brandGreen text-xs font-bold uppercase tracking-widest bg-green-50 px-3 py-1 rounded-full">Smart Estimator</span>
+                <h2 class="text-3xl font-black text-slate-900 mt-3">Automated Quotation Calculator</h2>
+                <p class="text-slate-600 text-sm mt-2">Enter your wall square footage, select coats, and instantly calculate required liters, MRP, franchise selling price, and net savings.</p>
+            </div>
+
+            <div class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+                    <!-- Sq Ft Input -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Total Wall Area (Sq. Ft.)</label>
+                        <input type="number" id="calcSqft" value="1000" min="50" max="100000" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-slate-800 font-bold focus:ring-2 focus:ring-brandGreen outline-none transition" oninput="calculateQuote()">
+                    </div>
+                    <!-- Coats Selector -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Number of Coats</label>
+                        <select id="calcCoats" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-slate-800 font-bold focus:ring-2 focus:ring-brandGreen outline-none transition" onchange="calculateQuote()">
+                            <option value="1">1 Coat</option>
+                            <option value="2" selected>2 Coats (Recommended)</option>
+                            <option value="3">3 Coats</option>
+                        </select>
+                    </div>
+                    <!-- Product Selector -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-2">Select Product</label>
+                        <select id="calcProduct" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-slate-800 font-bold focus:ring-2 focus:ring-brandGreen outline-none transition" onchange="calculateQuote()">
+                            <!-- Populated dynamically -->
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Calculation Results Box -->
+                <div id="calcResults" class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm mb-6 space-y-4">
+                    <!-- Dynamic result cards -->
+                </div>
+
+                <!-- WhatsApp Quote Dispatcher -->
+                <div class="text-center">
+                    <button onclick="sendQuoteToWhatsApp()" class="bg-brandGreen hover:bg-green-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition flex items-center justify-center mx-auto text-base">
+                        <i class="fa-brands fa-whatsapp text-2xl mr-2"></i> Send Detailed Quote to WhatsApp
+                    </button>
+                    <p class="text-xs text-slate-500 mt-2">Connect instantly with our Coimbatore Franchise coordinator at +91 95975 89151.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof & National Award Section -->
+    <section id="legacy" class="py-16 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="bg-brandAmber text-slate-900 text-xs font-black uppercase px-3.5 py-1.5 rounded-full">National Recognition</span>
+                    <h2 class="text-3xl sm:text-4xl font-black tracking-tight">2008 Government of India National Award</h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Presented at Vigyan Bhavan, New Delhi, this prestigious national award validates our 25+ years of relentless innovation, chemical purity, and manufacturing excellence in the paint industry.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700">
+                            <span class="block text-2xl font-black text-brandAmber">25+ Years</span>
+                            <span class="text-xs text-slate-400">Industry Legacy</span>
+                        </div>
+                        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700">
+                            <span class="block text-2xl font-black text-brandGreen">100% Eco</span>
+                            <span class="text-xs text-slate-400">Green Standard</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-6 flex justify-center">
+                    <div class="bg-white p-4 rounded-3xl shadow-2xl max-w-lg">
+                        <!-- Uncropped National Award Image -->
+                        <img src="https://github.com/subconsciousman/tulsi-assets/blob/main/national-award%20.jpeg?raw=true" alt="2008 Government of India National Award at Vigyan Bhavan" class="w-full h-auto rounded-2xl object-contain max-h-[400px]">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Lead Capture Form -->
+    <section class="py-16 bg-white border-b border-slate-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-green-50/60 p-8 rounded-3xl border border-green-100 shadow-sm">
+                <div class="text-center mb-6">
+                    <h3 class="text-2xl font-black text-slate-900">Direct Franchise & Bulk Order Enquiry</h3>
+                    <p class="text-xs text-slate-600 mt-1">Fill out your details to connect instantly via WhatsApp with our sales team.</p>
+                </div>
+                <form onsubmit="submitLeadForm(event)" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Full Name</label>
+                            <input type="text" id="leadName" required placeholder="e.g. Ramesh Kumar" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brandGreen outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone / WhatsApp Number</label>
+                            <input type="tel" id="leadPhone" required placeholder="e.g. 98430XXXXX" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brandGreen outline-none">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Requirement Details / Location</label>
+                        <textarea id="leadMsg" rows="3" required placeholder="Mention your requirement (e.g., House painting for 2000 sq.ft in Coimbatore / Franchise dealership inquiry)" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brandGreen outline-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-darkGreen hover:bg-green-900 text-white font-bold py-3.5 rounded-xl shadow-md transition flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Submit & Connect on WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Mobile Action Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 flex items-center justify-around shadow-lg">
+        <a href="tel:+919597589151" class="flex-1 bg-slate-100 text-slate-800 text-center py-3 rounded-xl font-bold text-xs flex items-center justify-center space-x-2 mr-2">
+            <i class="fa-solid fa-phone text-brandGreen"></i>
+            <span>Call Now</span>
+        </a>
+        <a href="https://wa.me/919597589151?text=Hello%20Tulsi%20Paints%20Franchise,%20I%20am%20interested%20in%20your%20products." target="_blank" class="flex-1 bg-brandGreen text-white text-center py-3 rounded-xl font-bold text-xs flex items-center justify-center space-x-2">
+            <i class="fa-brands fa-whatsapp text-base"></i>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Footer with Corporate & Coimbatore Addresses -->
+    <footer id="contact" class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 mb-16 md:mb-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Brand Column -->
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <img src="https://github.com/subconsciousman/tulsi-assets/blob/main/tulsi-logo.jpeg?raw=true" alt="Tulsi Logo" class="h-10 w-10 object-contain rounded-lg bg-white p-1">
+                    <span class="text-lg font-black text-white">TULSI PAINTS</span>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Direct Franchise Hub bringing 25+ years of National Award-winning eco-friendly and heavy-metal-free paints to your doorstep.
+                </p>
+                <div class="text-xs text-slate-400">
+                    <p><strong>Phone / WhatsApp:</strong> +91 95975 89151</p>
+                    <p><strong>Email:</strong> info@tulsipaints.com</p>
+                </div>
+            </div>
+
+            <!-- Coimbatore Franchise Address -->
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider">Coimbatore Franchise Hub</h4>
+                <p class="text-xs leading-relaxed text-slate-300">
+                    <i class="fa-solid fa-location-dot text-brandGreen mr-1.5"></i> 10/16, Vadavalli Road, Edayarpalayam, Coimbatore, Tamil Nadu 641025, India.
+                </p>
+                <p class="text-xs text-slate-400">Open Mon - Sat: 9:00 AM - 7:00 PM</p>
+            </div>
+
+            <!-- Corporate Address -->
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider">Corporate Headquarters</h4>
+                <p class="text-xs leading-relaxed text-slate-300">
+                    <i class="fa-solid fa-building text-brandAmber mr-1.5"></i> 28, Govardhan Ghat Road, Nanded, Maharashtra - 431601, India.
+                </p>
+                <p class="text-xs text-slate-400">Contact: +91 - 9112220902 | info@tulsipaints.com</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
+            &copy; 2026 Tulsi Paints Direct Franchise. All rights reserved. Built with precision for high-performance conversions.
+        </div>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // 14 Products Catalog Data Array mapped with user-configured GitHub image URLs
+        const productsCatalog = [
+            { id: "P001", name: "Polar Interior Primer", category: "Primer", shelfLife: "3 Years", thinning: "30-40% by volume", coverage: "110-130 sq.ft/L (2 coats)", shades: "White", finish: "Smooth Matt", washability: "Moderate", features: ["High adhesion", "Prevents chalking", "Enhances topcoat life"], defaultMrp1L: 240, defaultSelling1L: 195, defaultMrp20L: 4200, defaultSelling20L: 3500, img: "https://github.com/subconsciousman/tulsi-assets/blob/main/polar-primer.jpg?raw=true" },
+            { id: "P002", name: "Mintz Primer", category: "Primer", shelfLife: "3 Years", thinning: "35% by volume", coverage: "120-140 sq.ft/L", shades: "White & Pastel", finish: "Matt", washability: "Moderate", features: ["Quick drying", "Superior alkali resistance", "Smooth base"], defaultMrp1L: 260, defaultSelling1L: 210, defaultMrp20L: 4500, defaultSelling20L: 3800, img: "https://github.com/subconsciousman/tulsi-assets/blob/main/mintz-primer.jpg?raw=true" },
+            { id: "P003", name: "Praise Premium Base Coat", category: "Base Coat", shelfLife: "3 Years", thinning: "30% by volume", coverage: "100-120 sq.ft/L", shades: "White", finish: "Rich Matt", washability: "Good", features: ["Maximum opacity", "Conceals surface imperfections", "Extra bonding"], defaultMrp1L: 320, defaultSelling1L: 260, defaultMrp20L: 5800, defaultSelling20L: 4900, img: "https://github.com/subconsciousman/tulsi-assets/blob/main/praise-primer.jpg?raw=true" },
+            { id: "P004", name: "Grace Interior", category: "Interior Emulsion", shelfLife: "3 Years", thinning: "40-50% with water", coverage: "130-150 sq.ft/L (2 coats)", shades: "Wide Shade Palette", finish: "Smooth Sheen", washability: "Good", features: ["Soft sheen finish", "Stain resistance", "Odorless formula"], defaultMrp1L: 280, defaultSelling1L: 225, defaultMrp20L: 5000, defaultSelling20L: 4200, img: "https://github.com/subconsciousman/tulsi-assets/blob/main/grace.jpg?raw=true" },
+            { id: "P005", name: "Vigor Exterior", category: "Exterior Emulsion", shelfLife: "3 Years", thinning: "40% with water", coverage: "90-110 sq.ft/L (2 coats)", shades: "Exterior Range", finish: "Weatherproof Matt", washability: "High", features: ["Anti-algal & anti-fungal", "UV resistant", "Extreme weather shield"], defaultMrp1L: 350, defaultSelling1L: 285, defaultMrp20L: 6200, defaultSelling20L: 5300, img: "https://github.com/subconsciousman/tulsi-assets/blob/main/vigor.jpg?raw=true" },
+            { id: "P006", name: "Vibes Premium", category: "Interior Emulsion", shelfLife: "3 Years", thinning: "40% with water", coverage: "140-160 sq.ft/L", shades: "Rich Pastel Shades", finish: "Silk Smooth", washability: "High", features: ["Luxurious sheen", "Scrub resistant", "Anti-bacterial"], defaultMrp1L: 450, defaultSelling1L: 370, defaultMrp20L: 8200, defaultSelling20L: 6900, img: "https://github.com/subconsciousman/tulsi-assets/blob/main/vibes.jpg?raw=true" },
+            { id: "P007", name: "Auria Premium", category: "Interior / Exterior", shelfLife: "3 Years", thinning: "40% with water", coverage: "130-150 sq.ft/L", shades: "Custom Tinting", finish: "Smooth Rich", washability: "High", features: ["Superior washability", "Long lasting color retention", "Crack bridging"], defaultMrp1L: 550, defaultSelling1L: 450, defaultMrp20L: 10200, defaultSelling20L: 8600, img: "https://github.com/subconsciousman/tulsi-assets/blob/main/auria.jpg?raw=true" },
+            { id: "P008", name: "Elanzaa Luxury", category: "Luxury Emulsion", shelfLife: "3 Years", thinning: "35-40% with water", coverage: "150-180 sq.ft/L", shades: "Designer Shades", finish: "Ultra-Rich Velvet", washability: "Excellent", features: ["Teflon surface protector", "Rich burnish resistance", "Exquisite velvet touch"], defaultMrp1L: 750, defaultSelling1L: 620, defaultMrp20L: 14000, defaultSelling20L: 11800, img: "https://github.com/subconsciousman/tulsi-assets/blob/main/elanzaa.jpg?raw=true" },
+            { id: "P009", name: "All-Right Hi-Sheen", category: "Enamel / Finish", shelfLife: "3 Years", thinning: "Mineral turpentine", coverage: "160-180 sq.ft/L", shades: "Glossy Range", format: "High Gloss", finish: "Mirror Gloss", washability: "Superior", features: ["Mirror gloss shine", "Non-yellowing", "Wood & metal protection"], defaultMrp1L: 600, defaultSelling1L: 490, defaultMrp20L: 11000, defaultSelling20L: 9300, img: "https://github.com/subconsciousman/tulsi-assets/blob/main/all-right.jpg?raw=true" },
+            { id: "P010", name: "Eternity Damp Protect", category: "Waterproofing", shelfLife: "3 Years", thinning: "Ready to use / 10% water", coverage: "50-60 sq.ft/L (2 coats)", shades: "Base Colors", finish: "Elastomeric Membrane", washability: "Waterproof", features: ["10-year damp proof warranty", "Bridging hairline cracks", "Negative hydrostatic pressure resistance"], defaultMrp1L: 850, defaultSelling1L: 700, defaultMrp20L: 16000, defaultSelling20L: 13500, img: "https://github.com/subconsciousman/tulsi-assets/blob/main/eternity.jpg?raw=true" },
+            { id: "P011", name: "PU Polymer Putty", category: "Wall Putty", shelfLife: "1 Year", thinning: "Add clean water (~35%)", coverage: "20-25 sq.ft/kg (2 coats)", shades: "Pure White", finish: "Velvety Base", washability: "Water Resistant", features: ["Polyurethene modified", "Zero flaking", "Super smooth leveling"], defaultMrp1L: 120, defaultSelling1L: 95, defaultMrp20L: 2200, defaultSelling20L: 1850, img: "https://github.com/subconsciousman/tulsi-assets/blob/main/polymer-putty.jpg?raw=true" },
+            { id: "P012", name: "Zook Water-Based Enamel", category: "Enamel", shelfLife: "3 Years", thinning: "Water thinnable", coverage: "140-160 sq.ft/L", shades: "Vibrant Enamels", finish: "High Gloss", washability: "Excellent", features: ["Eco-friendly enamel", "Zero VOC smell", "Fast drying"], defaultMrp1L: 400, defaultSelling1L: 330, defaultMrp20L: 7500, defaultSelling20L: 6400, img: "https://github.com/subconsciousman/tulsi-assets/blob/main/zook-enamel.png?raw=true" },
+            { id: "P013", name: "MTL Shine Metallic", category: "Specialty Finish", shelfLife: "3 Years", thinning: "Water / Thinner", coverage: "120-140 sq.ft/L", shades: "Gold, Copper, Silver", finish: "Metallic Sparkle", washability: "High", features: ["Rich metallic luster", "Interior & exterior accent walls", "Tarnish proof"], defaultMrp1L: 650, defaultSelling1L: 540, defaultMrp20L: 12000, defaultSelling20L: 10200, img: "https://github.com/subconsciousman/tulsi-assets/blob/main/mtl-shine.jpg?raw=true" }
+        ];
+
+        // Live CSV Pricing URL provided by user
+        const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRQxCqTwHyBpUNxfd0jooYlxUq61l4W_50CMbS04pk_OT9dYfCsoMUHZyrjPx6VTkD_DbTlMtqbCK2B/pub?output=csv";
+
+        // Fallback SVG graphic for image onerror handler
+        const fallbackSvg = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23f1f5f9'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='%2364748b'>Tulsi Paints Product</text></svg>";
+
+        // Render Product Catalog UI immediately without waiting for async fetch
+        function renderProducts() {
+            const grid = document.getElementById('productGrid');
+            const calcSelect = document.getElementById('calcProduct');
+            
+            grid.innerHTML = '';
+            calcSelect.innerHTML = '';
+
+            productsCatalog.forEach(p => {
+                // Populate Catalog Card
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between";
+                card.innerHTML = `
+                    <div>
+                        <div class="relative h-56 bg-slate-100 overflow-hidden flex items-center justify-center p-4">
+                            <img src="${p.img}" alt="${p.name}" class="h-full w-full object-contain object-center transition duration-300 hover:scale-105" onerror="this.src='${fallbackSvg}'">
+                            <span class="absolute top-3 left-3 bg-darkGreen text-white text-xs font-bold px-2.5 py-1 rounded-lg uppercase">${p.category}</span>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="font-black text-slate-900 text-lg">${p.name}</h3>
+                            <div class="grid grid-cols-2 gap-2 text-xs text-slate-600 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                <div><strong>Shelf-life:</strong> ${p.shelfLife}</div>
+                                <div><strong>Finish:</strong> ${p.finish}</div>
+                                <div><strong>Coverage:</strong> ${p.coverage}</div>
+                                <div><strong>Washability:</strong> ${p.washability}</div>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 pt-1">
+                                ${p.features.map(f => `<span class="bg-green-50 text-darkGreen text-[11px] font-semibold px-2 py-0.5 rounded-md"><i class="fa-solid fa-check mr-1"></i>${f}</span>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-slate-100 mt-4">
+                        <div class="flex items-center justify-between mb-4 pt-4">
+                            <div>
+                                <span class="text-[11px] font-bold text-slate-400 uppercase block">1L Pack Price</span>
+                                <div class="flex items-baseline space-x-2">
+                                    <span class="text-lg font-black text-brandGreen" id="price_1l_${p.id}">₹${p.defaultSelling1L}</span>
+                                    <span class="text-xs text-slate-400 line-through" id="mrp_1l_${p.id}">₹${p.defaultMrp1L}</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-[11px] font-bold text-slate-400 uppercase block">20L Pack Price</span>
+                                <div class="flex items-baseline space-x-2 justify-end">
+                                    <span class="text-lg font-black text-brandGreen" id="price_20l_${p.id}">₹${p.defaultSelling20L}</span>
+                                    <span class="text-xs text-slate-400 line-through" id="mrp_20l_${p.id}">₹${p.defaultMrp20L}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/919597589151?text=Hello%20Tulsi%20Paints%20Coimbatore,%20I%20would%20like%20to%20order%20${encodeURIComponent(p.name)}." target="_blank" class="w-full bg-darkGreen hover:bg-green-900 text-white font-bold py-2.5 rounded-xl text-xs flex items-center justify-center space-x-2 transition">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>Order via WhatsApp</span>
+                        </a>
+                    </div>
+                `;
+                grid.appendChild(card);
+
+                // Populate Calculator Dropdown
+                const opt = document.createElement('option');
+                opt.value = p.id;
+                opt.textContent = `${p.name} (${p.category})`;
+                calcSelect.appendChild(opt);
+            });
+
+            calculateQuote();
+        }
+
+        // Fetch Live CSV Prices and Update UI
+        async function refreshLivePrices() {
+            const statusEl = document.getElementById('syncStatus');
+            statusEl.innerHTML = `<span class="w-2 h-2 bg-amber-500 rounded-full animate-ping mr-2"></span> Syncing Live Prices...`;
+            
+            try {
+                const response = await fetch(CSV_URL);
+                if (!response.ok) throw new Error('Network response failed');
+                const csvText = await response.text();
+                
+                // Parse CSV lines
+                const lines = csvText.trim().split('\n');
+                if (lines.length < 2) throw new Error('Invalid CSV data');
+
+                let updatedCount = 0;
+                // Skip header row
+                for (let i = 1; i < lines.length; i++) {
+                    const row = lines[i].split(',').map(item => item.trim().replace(/^"|"$/g, ''));
+                    if (row.length >= 6) {
+                        const [prodId, prodName, mrp1L, selling1L, mrp20L, selling20L] = row;
+                        const product = productsCatalog.find(p => p.id === prodId);
+                        if (product) {
+                            product.defaultMrp1L = Number(mrp1L) || product.defaultMrp1L;
+                            product.defaultSelling1L = Number(selling1L) || product.defaultSelling1L;
+                            product.defaultMrp20L = Number(mrp20L) || product.defaultMrp20L;
+                            product.defaultSelling20L = Number(selling20L) || product.defaultSelling20L;
+
+                            // Update DOM elements
+                            const p1El = document.getElementById(`price_1l_${prodId}`);
+                            const m1El = document.getElementById(`mrp_1l_${prodId}`);
+                            const p20El = document.getElementById(`price_20l_${prodId}`);
+                            const m20El = document.getElementById(`mrp_20l_${prodId}`);
+
+                            if (p1El) p1El.textContent = `₹${product.defaultSelling1L}`;
+                            if (m1El) m1El.textContent = `₹${product.defaultMrp1L}`;
+                            if (p20El) p20El.textContent = `₹${product.defaultSelling20L}`;
+                            if (m20El) m20El.textContent = `₹${product.defaultMrp20L}`;
+                            updatedCount++;
+                        }
+                    }
+                }
+
+                statusEl.innerHTML = `<span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span> Prices Synced Successfully (${updatedCount} items)`;
+                calculateQuote();
+            } catch (err) {
+                console.warn('Live CSV fetch fallback active:', err);
+                statusEl.innerHTML = `<span class="w-2 h-2 bg-brandAmber rounded-full mr-2"></span> Using Standard Franchise Pricing`;
+            }
+        }
+
+        // Automated Quotation Calculator Logic
+        function calculateQuote() {
+            const sqft = parseFloat(document.getElementById('calcSqft').value) || 1000;
+            const coats = parseInt(document.getElementById('calcCoats').value) || 2;
+            const selectedId = document.getElementById('calcProduct').value;
+            const product = productsCatalog.find(p => p.id === selectedId) || productsCatalog[0];
+
+            // Coverage estimation: ~120 sq ft per liter for 2 coats
+            const sqftPerLiter = 125;
+            const totalLitersNeeded = Math.ceil((sqft * coats) / sqftPerLiter);
+
+            // Calculate pricing based on 1L and 20L pack mix
+            const buckets20L = Math.floor(totalLitersNeeded / 20);
+            const remainingLiters = totalLitersNeeded % 20;
+
+            const totalMrp = (buckets20L * product.defaultMrp20L) + (remainingLiters * product.defaultMrp1L);
+            const totalSelling = (buckets20L * product.defaultSelling20L) + (remainingLiters * product.defaultSelling1L);
+            const netSavings = totalMrp - totalSelling;
+
+            const resultsContainer = document.getElementById('calcResults');
+            resultsContainer.innerHTML = `
+                <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 text-center">
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                        <span class="text-xs text-slate-500 uppercase font-bold">Estimated Requirement</span>
+                        <span class="text-2xl font-black text-slate-900 block mt-1">${totalLitersNeeded} Liters</span>
+                        <span class="text-[11px] text-slate-400">(${buckets20L} x 20L buckets + ${remainingLiters} x 1L)</span>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                        <span class="text-xs text-slate-500 uppercase font-bold">Total MRP</span>
+                        <span class="text-2xl font-black text-slate-400 line-through block mt-1">₹${totalMrp.toLocaleString()}</span>
+                        <span class="text-[11px] text-slate-400">Standard Retail Value</span>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-xl border border-green-100">
+                        <span class="text-xs text-darkGreen uppercase font-bold">Franchise Price</span>
+                        <span class="text-2xl font-black text-brandGreen block mt-1">₹${totalSelling.toLocaleString()}</span>
+                        <span class="text-[11px] text-darkGreen">Direct Special Price</span>
+                    </div>
+                    <div class="bg-amber-50 p-4 rounded-xl border border-amber-100">
+                        <span class="text-xs text-amber-800 uppercase font-bold">Your Net Savings</span>
+                        <span class="text-2xl font-black text-brandAmber block mt-1">₹${netSavings.toLocaleString()}</span>
+                        <span class="text-[11px] text-amber-700">Direct Franchise Discount</span>
+                    </div>
+                </div>
+            `;
+        }
+
+        // WhatsApp Quote Dispatcher
+        function sendQuoteToWhatsApp() {
+            const sqft = document.getElementById('calcSqft').value;
+            const coats = document.getElementById('calcCoats').value;
+            const selectedId = document.getElementById('calcProduct').value;
+            const product = productsCatalog.find(p => p.id === selectedId) || productsCatalog[0];
+
+            const message = `Hello Tulsi Paints Coimbatore Hub,%0A%0AI would like to place an order / get a quote based on your calculator:%0A- Product: ${product.name}%0A- Area: ${sqft} Sq. Ft.%0A- Coats: ${coats}%0A%0APlease confirm availability and final delivery details.`;
+            window.open(`https://wa.me/919597589151?text=${message}`, '_blank');
+        }
+
+        // Lead Form Submission
+        function submitLeadForm(e) {
+            e.preventDefault();
+            const name = document.getElementById('leadName').value;
+            const phone = document.getElementById('leadPhone').value;
+            const msg = document.getElementById('leadMsg').value;
+
+            const text = `Hello Tulsi Paints Coimbatore,%0A%0ANew Franchise / Order Inquiry:%0A- Name: ${name}%0A- Phone: ${phone}%0A- Message: ${msg}`;
+            window.open(`https://wa.me/919597589151?text=${text}`, '_blank');
+        }
+
+        // Run rendering immediately upon script load
+        renderProducts();
+        // Trigger background live CSV price sync
+        refreshLivePrices();
+    </script>
+</body>
+</html>
